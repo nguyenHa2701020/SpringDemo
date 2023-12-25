@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a th:href="@{/customer-list}">List Customer</a><br />
+    <h1>View Customer:</h1>
+    Customer ID: <span th:text="${customer.id}"></span> <br/>
+    Customer Name: <span th:text="${customer.name}"></span> <br/>
+    Customer Address: <span th:text="${customer.address}"></span> <br/>
+</body>
+</html>

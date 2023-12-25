@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  th:href="@{/css/update.css}">
+</head>
+
+<body>
+    <a href="/customer-list">List Customer</a>
+    <br />
+    <h1>Edit Customer:</h1>
+    <form action="/updateCustomer" method="POST" th:object="${customer}">
+        Id: <input type="text" th:field="*{id}" readonly="true" /> <br /> <br />
+        Name: <input type="text" th:field="*{name}" /> <br /> <br />
+        Address: <input type="text" th:field="*{address}" /> <br /> <br />
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
